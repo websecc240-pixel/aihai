@@ -1,2 +1,0 @@
-@model LeaveRequest
-<h1>Delete Leave Request</h1><div class="panel"><p>Delete the <strong>@Model.LeaveType</strong> request for <strong>@Model.Employee?.Name</strong>?</p><form method="post"><input type="hidden" asp-for="Id"><button class="danger">Delete</button> <a href="/Leaves">Cancel</a></form></div>

@@ -1,2 +1,0 @@
-@model Employee
-<h1>Add Employee</h1><div class="panel formbox"><form method="post"><div asp-validation-summary="ModelOnly" class="error"></div><label>Name</label><input asp-for="Name"><span asp-validation-for="Name" class="error"></span><label>Department</label><input asp-for="Department"><label>Email</label><input asp-for="Email"><span asp-validation-for="Email" class="error"></span><label>Leave Balance</label><input asp-for="LeaveBalance" type="number" min="0"><button class="btn">Save Employee</button> <a href="/Employees">Cancel</a></form></div>

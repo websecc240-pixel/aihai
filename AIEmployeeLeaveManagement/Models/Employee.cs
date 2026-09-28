@@ -1,12 +1,12 @@
-using System.ComponentModel.DataAnnotations;
+namespace LeaveManagementSystem.Models;
 
-namespace AIEmployeeLeaveManagement.Models;
 public class Employee
 {
     public int Id { get; set; }
-    [Required, StringLength(80)] public string Name { get; set; } = "";
-    [Required, StringLength(100)] public string Department { get; set; } = "";
-    [Required, EmailAddress] public string Email { get; set; } = "";
+    public string Name { get; set; } = "";
+    public string Department { get; set; } = "";
     public int LeaveBalance { get; set; } = 20;
-    public ICollection<LeaveRequest> LeaveRequests { get; set; } = new List<LeaveRequest>();
+
+    public override string ToString() =>
+        $"#{Id,-3} {Name,-18} {Department,-14} Balance: {LeaveBalance} days";
 }
