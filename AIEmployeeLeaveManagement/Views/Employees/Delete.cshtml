@@ -1,0 +1,2 @@
+@model Employee
+<h1>Delete Employee</h1><div class="panel"><p>Delete <strong>@Model.Name</strong>? Existing leave records may be affected.</p><form method="post"><input type="hidden" asp-for="Id"><button class="danger">Delete</button> <a href="/Employees">Cancel</a></form></div>
